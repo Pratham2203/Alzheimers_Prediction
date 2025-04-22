@@ -4,7 +4,7 @@ import streamlit as st
 CSS = open("assets/css/styles.css", 'r').read()
 
 # ASSETS
-BACKGROUND = "assets/images/bg.webp"
+BACKGROUND = "assets/images/bg2.webp"
 BANNER = "assets/images/banner.webp"
 DEFAULT_IMAGE = "assets/images/default.webp"
 SIDE_BANNER = "assets/images/side_banner.webp"
@@ -34,16 +34,6 @@ CONDITION_DESCRIPTION = {
     "CN": "This suggests that the individual has normal cognitive functioning without significant impairments. "
         "This group serves as a control for comparison in Alzheimer's research."
 }
-
-# # NEWS PAGE
-# NEWS_API_KEY = st.secrets["NEWS_API"]
-# KEYWORD = "alzheimer"
-
-
-# # CHATBOT PAGE
-# HF_EMAIL = st.secrets['HF_GMAIL']
-# HF_PASS = st.secrets['HF_PASS']    
-# BASE_PROMPT = st.secrets['BASE_PROMPT']
 
 
 # TEAM MEMBERS PAGE

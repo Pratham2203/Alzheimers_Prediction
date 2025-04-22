@@ -7,11 +7,17 @@ from streamlit_pages._predict_alzheimer import prediction_page
 from streamlit_pages._team_members import team_members  
 # from streamlit_pages._chat_page import chat_bot
 
-# SETTING PAGE CONFIG
 st.set_page_config(
     page_title="Alzheimer's Prediction Systems",
     page_icon=":brain:",
 )
+
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+""", unsafe_allow_html=True)
+
+# SETTING PAGE CONFIG
+
 
 st.markdown(f"<style>{CSS}</style>", unsafe_allow_html=True)
 
@@ -26,7 +32,11 @@ def set_page_background(png_file):
     page_bg_img = f'''
         <style>
         .stApp {{
-            background-image: url("data:image/png;base64,{bin_str}");
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("data:image/png;base64,{bin_str}");
+            background-size: cover;         /* Ensures it stretches to fill the screen */
+            background-repeat: no-repeat;   /* Prevents tiling */
+            background-position: center;    /* Centers the image */
+            background-attachment: fixed; 
             }}
         </style>
     '''
